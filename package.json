@@ -1,7 +1,8 @@
 {
-  "name": "my-first-ionic-app",
+  "name": "my-first-app",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://dyarleniber.github.io/my-first-app",
   "dependencies": {
     "@capacitor/android": "4.6.0",
     "@capacitor/app": "4.1.1",
@@ -43,6 +44,8 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
