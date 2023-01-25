@@ -2,7 +2,7 @@
   "name": "my-first-app",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://dyarleniber.github.io/my-first-app",
+  "homepage": "https://Shubhamthombare.github.io/my-first-app",
   "dependencies": {
     "@capacitor/android": "4.6.0",
     "@capacitor/app": "4.1.1",
