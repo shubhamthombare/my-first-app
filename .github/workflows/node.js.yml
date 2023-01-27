@@ -48,11 +48,8 @@ jobs:
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
         
-    - name: Build APK
-      run: ./gradlew assembleRelease
-
-    - name: Release APK
+    - name: Deploy APK
       uses: actions/upload-artifact@v2
       with:
-        name: app-release.apk
-        path: app/build/outputs/apk/release/app-release.apk
+        name: app-debug.apk
+        path: android/app/build/outputs/apk/debug/app-debug.apk
